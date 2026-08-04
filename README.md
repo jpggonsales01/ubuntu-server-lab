@@ -1,2 +1,19 @@
 # ubuntu-server-lab
 Laboratorio para a criação de um servidor corporativo via ubuntu sendo virtualizado no Oracle VirtualBox
+
+ETAPAS DO PROJETO
+
+- ORGANIZAÇÃO DE USUARIOS E PERMISSÕES 
+- INSTALAÇÃO DO SERVER 
+- CONFIGURAÇÃO DO SAMBA 
+- TESTES INICIAIS 
+- INSTALAÇÃO DO WEBMIN 
+- APLICAÇÃO DE CRIAÇÃO DE USUARIOS
+- APLICAÇÃO DE CRIAÇÃO DE PERMISSÕES 
+- TESTES FINAIS 
+- AJUSTES DE SEGURANÇA 
+- IMPLEMENTAÇÃO DE FIREWALL 
+- DOCUMENTAÇÃO 
+- TESTES FINAIS 
+
+# EM ANDAMENTO

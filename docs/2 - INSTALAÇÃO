@@ -1,1 +1,65 @@
+## Primeira etapa – Instalar e configurar Ubuntu/Samba
+
+### Objetivo
+
+Criar um servidor de arquivos utilizando **Ubuntu Server** e **Samba**, permitindo acesso compartilhado a partir de computadores **Windows**.
+
+---
+
+### Ambiente utilizado
+
+* **Virtualizador:** VirtualBox
+* **Sistema operacional:** Ubuntu Server 26.04 LTS
+* **Link para download do VirtualBox:** https://www.virtualbox.org/wiki/Downloads
+* **Link para download do Ubuntu Server:** https://ubuntu.com/download/server
+
+---
+
+### Configuração inicial da máquina virtual
+
+| Recurso     | Configuração                                |
+| ----------- | ------------------------------------------- |
+| Memória RAM | 2 GB                                        |
+| Processador | 1 vCPU                                      |
+| Disco       | Dinâmico                                    |
+| Rede        | Bridge                                      |
+
+**Observação:** inicialmente configurei a VM com recursos mínimos apenas para testes e monitoramento de consumo. A ideia é aumentar CPU e memória conforme o projeto evoluir.
+
+---
+
+### Instalação do Ubuntu Server
+
+Após baixar a ISO do Ubuntu Server:
+
+1. Criei uma nova máquina virtual no VirtualBox.
+2. Configurei a ISO como mídia de boot.
+3. Realizei a instalação padrão do Ubuntu Server.
+4. Defini usuário, senha e hostname da máquina.
+
+---
+
+### Instalação do Samba
+
+Com o Ubuntu já configurado, iniciei a instalação do Samba utilizando os comandos abaixo:
+
+```bash
+sudo apt update
+sudo apt install samba -y
+```
+
+Verificação do serviço:
+
+```bash
+sudo systemctl status smbd
+```
+
+---
+
+### Resultado da etapa
+
+* Ubuntu Server instalado com sucesso.
+* Acesso ao terminal funcionando normalmente.
+* Samba instalado e serviço **smbd** ativo.
+
 

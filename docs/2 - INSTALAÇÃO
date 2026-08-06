@@ -62,4 +62,40 @@ sudo systemctl status smbd
 * Acesso ao terminal funcionando normalmente.
 * Samba instalado e serviço **smbd** ativo.
 
+# Segunda etapa - Instalação do pacote Cockpit para visualização fácil de consumo e manejo de arquivos
 
+Escolhi o Cockpit, pois é uma interface que nunca utilizei antes. Irei testar a funcionalidade temporariamente. Se eu não me adequar, voltarei a utilizar o Webmin.
+
+## Instalando o pacote
+
+Antes de qualquer comando, atualizo a lista de pacotes com:
+
+```bash
+sudo apt update
+```
+
+Após isso, começo instalando o Cockpit:
+
+```bash
+sudo apt install cockpit -y
+```
+
+Com o Cockpit instalado, vou ativar e iniciar o serviço:
+
+```bash
+sudo systemctl enable --now cockpit.socket
+```
+
+Para testar se o serviço está ativo:
+
+```bash
+sudo systemctl status cockpit.socket
+```
+
+Agora, sabendo que o Cockpit está realmente ativo, vou para o teste real e acesso a interface web utilizando o endereço IP e a porta:
+
+```text
+http://192.168.100.176:9090
+```
+
+Conferi o funcionamento da interface. Em uma configuração futura, alterarei a porta padrão utilizada pelo Cockpit e ajustarei as regras do firewall para permitir o novo acesso
